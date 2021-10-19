@@ -1,0 +1,22 @@
+<mvc:View controllerName="Managment.Dashboard.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:tnt="sap.tnt">
+	<Page enableScrolling="false" showHeader="false" class="app">
+		<Toolbar width="100%" class="HeadToolbar">
+			<Button icon="sap-icon://nav-back" type="Transparent" press="onNavBack" class="NavBackButton" visible="{app>/showPageHeader}"/>
+			<ToolbarSpacer/>
+			<!--<Title text="{app>/pageTitle}"/>-->
+			<ToolbarSpacer/>
+		</Toolbar>
+		<!--<Toolbar width="100%" class="HeadToolbarTest">-->
+		<!--	<Button text="设备" press="showDevicParameter"/>-->
+		<!--	<Button text="窯" press="showCaveParameter"/>-->
+		<!--</Toolbar>-->
+		<!--<Image src="image/pageHeader.png" width="100%" class="PageHeaderImage" visible="{app>/showPageHeader}"/>-->
+		<!--<Image src="image/mainHeader.png" width="100%" class="MainHeaderImage" visible="{=!${app>/showPageHeader}}"/>-->
+		<!--<Button text="篩選" press="onFilter" class="AppFilterButton" visible="{app>/showFilter}"/>-->
+		<!--	<ScrollContainer width="100%" height="100%" horizontal="false" vertical="false" focusable="false">-->
+		<!--	<App id="app"></App>-->
+		<!--</ScrollContainer>-->
+		<App id="app"></App>
+	</Page>
+</mvc:View>

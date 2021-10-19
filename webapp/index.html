@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title>台泥動態管理平台</title>-->
+    <title>TCC Digital Boardroom</title>    
+    <!--UI5 lib-->
+    <script id="sap-ui-bootstrap"
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-resourceroots='{"Managment.Dashboard": "./"}'
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+            data-sap-ui-async="true"
+            data-sap-ui-frameOptions="trusted">
+    </script>
+    <!--baidu map api-->
+    <script type="text/javascript"
+            src="https://api.map.baidu.com/api?v=2.0&ak=DlIkh6m76AhEauaHxNquEL03LEoRYc0H"></script>
+    <!--tooltip lib-->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <!--EChart lib-->
+    <script src="./lib/vendor/echart/echarts-min.js"></script>
+</head>
+<body class="sapUiBody">
+<div data-sap-ui-component data-name="Managment.Dashboard" data-id="container"
+     data-settings='{"id" : "Dashboard"}'></div>
+</body>
+</html>

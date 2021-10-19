@@ -1,0 +1,1121 @@
+[{
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "1",
+	"Value": "438.5008",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp. Fan",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "1",
+	"Value": "765.3148",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "1",
+	"Value": "14.93738461",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "1",
+	"Value": "12.18716908",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "1",
+	"Value": "3.277515173",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp.",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "1",
+	"Value": "784.2668457",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "1",
+	"Value": "1469.831299",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "1",
+	"Value": "8.137800217",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "1",
+	"Value": "10.45978546",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "1",
+	"Value": "85.50115204",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "1",
+	"Value": "8456.155762",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "1",
+	"Value": "8456.155762",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "1",
+	"Value": "8456.155762",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "1",
+	"Value": "8456.155762",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "2",
+	"Value": "439.8028564",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "2",
+	"Value": "765.3148193",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "2",
+	"Value": "14.79994583",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "2",
+	"Value": "12.47072601",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "2",
+	"Value": "3.304250479",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp.",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "2",
+	"Value": "784.6430054",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "2",
+	"Value": "1470.120605",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "2",
+	"Value": "8.137800217",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "2",
+	"Value": "10.52488804",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "2",
+	"Value": "84.28590393",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "2",
+	"Value": "8330.64917",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "第2台風機風壓",
+	"Unit": "PA",
+	"Tag_Ecol": "Wind Pressure #2",
+	"Cycle": "2",
+	"Value": "8330.64917",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "2",
+	"Value": "8330.64917",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "2",
+	"Value": "8330.64917",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "3",
+	"Value": "439.2241516",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "3",
+	"Value": "765.3148193",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "3",
+	"Value": "14.90121651",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "3",
+	"Value": "12.45336533",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "3",
+	"Value": "3.288452387",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp.",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "3",
+	"Value": "785.019165",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "3",
+	"Value": "1480.247681",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "3",
+	"Value": "8.029295921",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "3",
+	"Value": "10.48148632",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "3",
+	"Value": "83.85189056",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "3",
+	"Value": "8264.944092",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "3",
+	"Value": "8264.944092",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "3",
+	"Value": "8264.944092",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "3",
+	"Value": "8264.944092",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "4",
+	"Value": "439.0794983",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "4",
+	"Value": "765.3148193",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "4",
+	"Value": "15.03865433",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "4",
+	"Value": "12.53438187",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "4",
+	"Value": "3.275084734",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "4",
+	"Value": "785.7714844",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "4",
+	"Value": "1482.851807",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "4",
+	"Value": "8.116099358",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "4",
+	"Value": "10.48148632",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "4",
+	"Value": "83.50467682",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "4",
+	"Value": "8272.321777",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "4",
+	"Value": "8272.321777",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "4",
+	"Value": "8272.321777",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "4",
+	"Value": "8272.321777",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "5",
+	"Value": "439.0794983",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "5",
+	"Value": "763.868103",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "5",
+	"Value": "14.9735527",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "5",
+	"Value": "12.17559528",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "5",
+	"Value": "3.304250479",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "5",
+	"Value": "786.147583",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "5",
+	"Value": "1482.5625",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "5",
+	"Value": "8.116099358",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "5",
+	"Value": "10.41638374",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "5",
+	"Value": "82.46303558",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "5",
+	"Value": "8277.956543",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "5",
+	"Value": "8277.956543",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "5",
+	"Value": "8277.956543",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "5",
+	"Value": "8277.956543",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "6",
+	"Value": "438.9348145",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "6",
+	"Value": "765.3148193",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "6",
+	"Value": "14.82888031",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Hea Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "6",
+	"Value": "12.03092289",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "6",
+	"Value": "3.271438837",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "6",
+	"Value": "786.147583",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "6",
+	"Value": "1485.455811",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "6",
+	"Value": "8.108865738",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "6",
+	"Value": "10.52488804",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "6",
+	"Value": "84.19910431",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "6",
+	"Value": "8314.909912",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "6",
+	"Value": "8314.909912",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "6",
+	"Value": "8314.909912",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "6",
+	"Value": "8314.909912",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "7",
+	"Value": "439.6581726",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "7",
+	"Value": "765.3148193",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "7",
+	"Value": "14.89398289",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "7",
+	"Value": "12.05985737",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "7",
+	"Value": "3.295743704",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "7",
+	"Value": "786.5237427",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "7",
+	"Value": "1480.247681",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "7",
+	"Value": "8.06546402",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "7",
+	"Value": "10.56828976",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "斜拉链电流",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "7",
+	"Value": "83.07066345",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "7",
+	"Value": "8317.067139",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "7",
+	"Value": "8317.067139",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "7",
+	"Value": "8317.067139",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "7",
+	"Value": "8317.067139",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "8",
+	"Value": "438.9348145",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "8",
+	"Value": "765.3148193",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "8",
+	"Value": "14.98078632",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "8",
+	"Value": "12.18716908",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "8",
+	"Value": "3.271438837",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "8",
+	"Value": "786.8999023",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "8",
+	"Value": "1482.851807",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "8",
+	"Value": "8.06546402",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "8",
+	"Value": "10.56828976",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "8",
+	"Value": "84.11229706",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "8",
+	"Value": "8272.264404",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "8",
+	"Value": "8272.264404",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "8",
+	"Value": "8272.264404",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "8",
+	"Value": "8272.264404",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "9",
+	"Value": "437.632782",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "9",
+	"Value": "765.3148193",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "9",
+	"Value": "14.96631908",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "9",
+	"Value": "12.26239872",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "9",
+	"Value": "3.299389601",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "9",
+	"Value": "787.6522217",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "9",
+	"Value": "1488.638672",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "9",
+	"Value": "8.094398499",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "9",
+	"Value": "10.44531822",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "9",
+	"Value": "83.85189056",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "9",
+	"Value": "8241.750488",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "9",
+	"Value": "8241.750488",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "9",
+	"Value": "8241.750488",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "9",
+	"Value": "8241.750488",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A52D02F01",
+	"Tag_CName": "Feeder",
+	"Unit": "T/H",
+	"Tag_Ecol": "Feed_Material",
+	"Cycle": "10",
+	"Value": "438.5007935",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A54D01ARS",
+	"Tag_CName": "High Temp rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "HighTemp_rpm",
+	"Cycle": "10",
+	"Value": "765.3148193",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D01F01",
+	"Tag_CName": "Kiln Inlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnEnd_Coal",
+	"Cycle": "10",
+	"Value": "14.93738461",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI75D02F01",
+	"Tag_CName": "Kiln Outlet Coal",
+	"Unit": "T/H",
+	"Tag_Ecol": "KilnHead_Coal",
+	"Cycle": "10",
+	"Value": "12.21610355",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A56D01SI",
+	"Tag_CName": "Kiln rpm",
+	"Unit": "rpm",
+	"Tag_Ecol": "Kiln_rpm",
+	"Cycle": "10",
+	"Value": "3.293313265",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "56D13T01",
+	"Tag_CName": "3rd Wind Temp",
+	"Unit": "℃",
+	"Tag_Ecol": "WindTemp_3rd",
+	"Cycle": "10",
+	"Value": "788.0283203",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A57D01T02",
+	"Tag_CName": "Kiln Outlet Fire",
+	"Unit": "℃",
+	"Tag_Ecol": "KilnHead_Fire",
+	"Cycle": "10",
+	"Value": "1491.532104",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI1",
+	"Tag_CName": "SPM #1",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_1st",
+	"Cycle": "10",
+	"Value": "8.145033836",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "AI57D02aARI2",
+	"Tag_CName": "SPM #2",
+	"Unit": "SPM",
+	"Tag_Ecol": "SPM_2nd",
+	"Cycle": "10",
+	"Value": "10.45978546",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "A65D01AI",
+	"Tag_CName": "Drap Am",
+	"Unit": "A",
+	"Tag_Ecol": "Drap_Am",
+	"Cycle": "10",
+	"Value": "81.33459473",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P01",
+	"Tag_CName": "Wind Pressure #1",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_1",
+	"Cycle": "10",
+	"Value": "8337.280518",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P02",
+	"Tag_CName": "Wind Pressure #2",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_2",
+	"Cycle": "10",
+	"Value": "8337.280518",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P03",
+	"Tag_CName": "Wind Pressure #3",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_3",
+	"Cycle": "10",
+	"Value": "8337.280518",
+	"SuggestId": ""
+}, {
+	"Tag_EName": "57D09P04",
+	"Tag_CName": "Wind Pressure #4",
+	"Unit": "PA",
+	"Tag_Ecol": "WindPressure_4",
+	"Cycle": "10",
+	"Value": "8337.280518",
+	"SuggestId": ""
+}]

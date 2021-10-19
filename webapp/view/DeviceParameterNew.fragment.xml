@@ -1,0 +1,565 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mc="sap.suite.ui.microchart" xmlns:vco="Managment.Dashboard.lib">
+	<Dialog showHeader="false" contentHeight="90%" contentWidth="80%" class="myDialog">
+		<VBox class="sapUiSmallMarginBegin">
+			<HBox class="sapUiSmallMarginTop">
+				<!--<Title text="設備當前參數" class="myTitle sapUiTinyMarginTop sapUiTinyMarginEnd"/>-->
+				<Title text="Equipment Current Parameter" class="myTitle sapUiTinyMarginTop sapUiTinyMarginEnd"/>				
+				<core:Icon id="PAModelIconId" src="sap-icon://sys-help" color="#04FFFB" class="sapUiSmallMarginTop"/>
+			</HBox>
+			<HBox>
+				<VBox width="33%">
+					<HBox class="myHBox sapUiTinyMarginBottom">
+						<!--<Label text="NOx排放量" class="myLabel sapUiLargeMarginEnd"/>-->
+						<Label text="NOx Emission" class="myLabel sapUiLargeMarginEnd"/>						
+						<ObjectNumber textAlign="End" number="340" state="Error"/>
+					</HBox>
+					<HBox class="myHBox">
+						<!--<Label text="SOx排放量" class="myLabel sapUiLargeMarginEnd"/>-->
+						<Label text="SOx Emission" class="myLabel sapUiLargeMarginEnd"/>
+						<ObjectNumber textAlign="End" number="14" state="Success"/>
+					</HBox>
+				</VBox>
+				<VBox width="33%" class="myHBox sapUiSmallMarginBegin">
+					<HBox class="sapUiTinyMarginTopBottom">
+						<VBox width="10%" class="sapUiSmallMarginBeginEnd">
+							<core:Icon src="sap-icon://message-warning" color="#F10261" class="myIcon"/>
+						</VBox>
+						<VBox class="sapUiSmallMarginBeginEnd">
+							<!--<Label text="基於目前產險運行參數預測" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text=" "/>
+							<!--<Label text="當前NOx排放量已超過預警值" class="myLabelColor"/>-->
+							<Label text="NOx emission have exceeded the upper limit" class="myLabelColor"/>							
+						</VBox>
+					</HBox>
+				</VBox>
+			</HBox>
+		</VBox>
+		<VBox class="sapUiSmallMarginBegin sapUiMediumMarginEnd">
+			<IconTabBar id="simulateIconTabBar" class="myIconTabBar sapUiSmallMarginTop">
+				<items>
+					<!--<IconTabFilter text="NOx處理建議" key="nox" binding="{/simulateNOx}">-->
+					<IconTabFilter text="NOx Recommendations" key="nox" binding="{/simulateNOx}">	
+						<VBox class="sapUiSmallMarginTop">
+							<VBox class="myBorderBottom sapUiSmallMarginBottom">
+								<!--<Title text="NOx處理SOP" class="myTitle"/>-->
+								<Title text="NOx SOP" class="myTitle"/>								
+							</VBox>
+							<!--<Label text="當前NOx排放量已超過預警值，建議進行如下操作：" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="Warning.....The NOx emission have exceeded the upper limit. It is recommended to proceed as follows:" class="myLabel sapUiTinyMarginBottom"/>							
+							<Label text="1. NH3 Adjustment" class="myLabel sapUiTinyMarginBottom"/>
+							<Label text="2. Optimize Parameters" class="myLabel sapUiTinyMarginBottom"/>
+						</VBox>
+						<VBox class="sapUiSmallMarginTop">
+							<VBox class="myBorderBottom sapUiSmallMarginBottom">
+								<!--<Title text="NOx智能模擬建議" class="myTitle"/>-->
+								<Title text="NOx Intelligent Simulation" class="myTitle"/>								
+							</VBox>
+							<HBox class="myTextBG sapUiContentPadding">
+								<VBox class="sapUiSmallMarginTop sapUiMediumMarginBeginEnd">
+									<Image src="image/settings.gif" width="100%"/>
+								</VBox>
+								<!--<core:Icon size="100px" src="sap-icon://settings" color="#04FFFB" class="sapUiSmallMarginTop sapUiMediumMarginBeginEnd"/>-->
+								<FormattedText htmlText="{/HTML}"/>
+							</HBox>
+						</VBox>
+						<!--<VBox class="sapUiSmallMarginTop">-->
+						<!--<Panel class="myPanelHeader sapUiSmallMarginTop sapUiNoContentPadding" headerText="智能模擬" expandable="true" expanded="false">-->
+						<Panel class="myPanelHeader sapUiSmallMarginTop sapUiNoContentPadding" headerText="Intelligent Simulation" expandable="true" expanded="false">							
+							<Toolbar class="myToolbarBorder">
+								<ToolbarSpacer/>
+								<SegmentedButton selectedKey="model" selectionChange="onPressModel" class="myPanelSegBtn">
+									<items>
+										<!--<SegmentedButtonItem text="模擬" key="model"/>-->
+										<!--<SegmentedButtonItem text="模擬歷史版本" key="modelHistory"/>-->									
+										<SegmentedButtonItem text="Simulation" key="model"/>										
+										<SegmentedButtonItem text="Simulation (Historical Version)" key="modelHistory"/>
+									</items>
+								</SegmentedButton>
+								<ToolbarSpacer/>
+							</Toolbar>
+							<Panel class="myPanel" visible="{/showModel}">
+								<HBox class="sapUiMediumMargin">
+									<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<!--<Label text="1.前10分钟鍛燒爐溫度均值" class="myLabel sapUiTinyMarginBottom"/>-->
+										<Label text="1.Kiln Temp. (past 10 mins)" class="myLabel sapUiTinyMarginBottom"/>											
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>												
+												<ObjectNumber number="870.00" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjust Value" class="myLabel sapUiTinyMarginBottom"/>												
+												<StepInput value="{input1}" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+										<!--<mc:BulletMicroChart width="90%" targetValue="{input1}" class="sapUiTinyMarginTopBottom">-->
+										<!--	<mc:actual>-->
+										<!--		<mc:BulletMicroChartData value="870.00" color="Good"/>-->
+										<!--	</mc:actual>-->
+										<!--	<mc:thresholds>-->
+										<!--		<mc:BulletMicroChartData value="0" color="Good"/>-->
+										<!--		<mc:BulletMicroChartData value="850" color="Critical"/>-->
+										<!--		<mc:BulletMicroChartData value="1000" color="Error"/>-->
+										<!--	</mc:thresholds>-->
+										<!--</mc:BulletMicroChart>-->
+									</VBox>
+									<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<!--<Label text="2.前10分钟氨水使用量均值" class="myLabel sapUiTinyMarginBottom"/>-->
+										<Label text="2.NH3 (past 10 mins)" class="myLabel sapUiTinyMarginBottom"/>										
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>												
+												<ObjectNumber number="0.60" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjust Value" class="myLabel sapUiTinyMarginBottom"/>												
+												<StepInput value="{input2}" class="mySimulateInput" step="0.1" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+										<!--<mc:BulletMicroChart width="90%" targetValue="{input2}" class="sapUiTinyMarginTopBottom">-->
+										<!--	<mc:actual>-->
+										<!--		<mc:BulletMicroChartData value="0.60" color="Good"/>-->
+										<!--	</mc:actual>-->
+										<!--	<mc:thresholds>-->
+										<!--		<mc:BulletMicroChartData value="0" color="Good"/>-->
+										<!--		<mc:BulletMicroChartData value="0.7" color="Critical"/>-->
+										<!--		<mc:BulletMicroChartData value="1.0" color="Error"/>-->
+										<!--	</mc:thresholds>-->
+										<!--</mc:BulletMicroChart>-->
+									</VBox>
+									<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<!--<Label text="3.前10分钟NOx數值均值" class="myLabel sapUiTinyMarginBottom"/>-->
+										<Label text="3.NOx (past 10 mins)" class="myLabel sapUiTinyMarginBottom"/>										
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>														
+												<ObjectNumber number="340" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjust Value" class="myLabel sapUiTinyMarginBottom"/>		
+												<StepInput value="{input3}" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+										<!--<mc:BulletMicroChart width="90%" targetValue="{input3}" class="sapUiTinyMarginTopBottom">-->
+										<!--	<mc:actual>-->
+										<!--		<mc:BulletMicroChartData value="340" color="Good"/>-->
+										<!--	</mc:actual>-->
+										<!--	<mc:thresholds>-->
+										<!--		<mc:BulletMicroChartData value="0" color="Good"/>-->
+										<!--		<mc:BulletMicroChartData value="250" color="Critical"/>-->
+										<!--		<mc:BulletMicroChartData value="300" color="Error"/>-->
+										<!--	</mc:thresholds>-->
+										<!--</mc:BulletMicroChart>-->
+									</VBox>
+								</HBox>
+								<HBox class="sapUiMediumMargin">
+									<VBox width="32%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<!--<Label text="4.前10分钟生料使用量均值" class="myLabel sapUiTinyMarginBottom"/>-->
+										<Label text="4.Raw Material (past 10 mins)" class="myLabel sapUiTinyMarginBottom"/>										
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>														
+												<ObjectNumber number="429.00" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjust Value" class="myLabel sapUiTinyMarginBottom"/>	
+												<StepInput value="{input4}" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+										<!--<mc:BulletMicroChart width="90%" targetValue="{input4}" class="sapUiTinyMarginTopBottom">-->
+										<!--	<mc:actual>-->
+										<!--		<mc:BulletMicroChartData value="429.00" color="Good"/>-->
+										<!--	</mc:actual>-->
+										<!--	<mc:thresholds>-->
+										<!--		<mc:BulletMicroChartData value="0" color="Good"/>-->
+										<!--		<mc:BulletMicroChartData value="450" color="Critical"/>-->
+										<!--		<mc:BulletMicroChartData value="500" color="Error"/>-->
+										<!--	</mc:thresholds>-->
+										<!--</mc:BulletMicroChart>-->
+									</VBox>
+									<VBox width="32%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<!--<Label text="5.未來3分鐘氨水均值" class="myLabel sapUiTinyMarginBottom"/>-->
+										<Label text="5.NH3 (next 3 mins)" class="myLabel sapUiTinyMarginBottom"/>										
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>		
+												<ObjectNumber number="0.60" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjust Value" class="myLabel sapUiTinyMarginBottom"/>	
+												<StepInput value="{input5}" class="mySimulateInput" step="0.1" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+										<!--<mc:BulletMicroChart width="90%" targetValue="{input5}" class="sapUiTinyMarginTopBottom">-->
+										<!--	<mc:actual>-->
+										<!--		<mc:BulletMicroChartData value="0.60" color="Good"/>-->
+										<!--	</mc:actual>-->
+										<!--	<mc:thresholds>-->
+										<!--		<mc:BulletMicroChartData value="0" color="Good"/>-->
+										<!--		<mc:BulletMicroChartData value="0.7" color="Critical"/>-->
+										<!--		<mc:BulletMicroChartData value="1.0" color="Error"/>-->
+										<!--	</mc:thresholds>-->
+										<!--</mc:BulletMicroChart>-->
+									</VBox>
+								</HBox>
+								<Toolbar class="myToolbarBorder">
+									<ToolbarSpacer/>
+									<!--<Button text="開始模擬" class="mySimulateBtn" press="onPressSimulate"/>-->
+									<Button text="Run Simulations" class="mySimulateBtn" press="onPressSimulate"/>									
+									<ToolbarSpacer/>
+								</Toolbar>
+							</Panel>
+							<Panel class="myPanel sapUiNoContentPadding" visible="{=!${/showModel}}">
+								<Table inset="false" sticky="ColumnHeaders" items="{path: '/modelHistory',sorter: {path: 'Date'}}" alternateRowColors="true">
+									<columns>
+										<Column>
+											<!--<Text text="版本"/>-->
+											<Text text="Version"/>											
+										</Column>
+										<Column >
+											<!--<Text text="目标值"/>-->
+											<Text text="Target Value"/>											
+										</Column>
+										<Column>
+											<!--<Text text="前10分鐘氨水使用量均值"/>-->
+											<Text text="NH3 (past 10 mins)"/>											
+										</Column>
+										<Column>
+											<!--<Text text="前10分鐘鍛燒爐溫度均值"/>-->
+											<Text text="Kiln Temp. (past 10 mins)"/>											
+										</Column>
+										<Column >
+											<!--<Text text="前10分鐘NOx數值均值"/>-->
+											<Text text="NOx (past 10 mins)"/>											
+										</Column>
+										<Column>
+											<!--<Text text="前10分钟生料使用量均值"/>-->
+											<Text text="Raw Material (past 10 mins)"/>											
+										</Column>
+										<Column>
+											<!--<Text text="未來3分鐘氨水均值"/>-->
+											<Text text="NH3 (next 3 mins)"/>											
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem vAlign="Middle">
+											<cells>
+												<Text text="{Date}"/>
+												<Text text="{Target}"/>
+												<Text text="{NH3}"/>
+												<Text text="{Degree}"/>
+												<Text text="{NOX}"/>
+												<Text text="{MAT}"/>
+												<Text text="{NH3AVG}"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</Panel>
+							<!--</VBox>-->
+							<VBox class="sapUiSmallMarginTop">
+								<!--<Title text="Target: 未來4 - 6分鐘的NOx均值" class="myTitle sapUiTinyMarginBottom" width="100%"/>-->
+								<Title text="Target: NOx (next 4-6 mins)" class="myTitle sapUiTinyMarginBottom" width="100%"/>								
+								<HBox>
+									<ObjectNumber textAlign="End" number="{predictValue}" state="Error" class="mySimulateObjNum"/>
+									<mc:BulletMicroChart size="L" targetValue="280.12" class="sapUiTinyMarginTopBottom">
+										<mc:actual>
+											<mc:BulletMicroChartData value="{predictValue}" color="{path:'predictValue',formatter: '.formatter.formatColorBulletNox'}"/>
+										</mc:actual>
+										<mc:thresholds>
+											<mc:BulletMicroChartData value="0" color="Good"/>
+											<mc:BulletMicroChartData value="280" color="Critical"/>
+											<mc:BulletMicroChartData value="320" color="Error"/>
+											<mc:BulletMicroChartData value="400" color="Error"/>
+										</mc:thresholds>
+									</mc:BulletMicroChart>
+								</HBox>
+								<vco:EChart option="{simOpt}" height="300px"/>
+							</VBox>
+							<VBox class="sapUiSmallMarginTop">
+								<!--<Title text="調整設備歷史數據" class="myTitle sapUiTinyMarginBottom"/>-->
+								<Title text="Adjust Historical Value" class="myTitle sapUiTinyMarginBottom"/>								
+								<HBox>
+									<Select selectedKey="Degree" class="mySelect  sapUiSmallMarginEnd" width="15rem" change="onSelectEchart">
+										<items>
+											<!--<core:Item key="Degree" text="前10分鐘鍛燒爐溫度均值"/>-->
+											<!--<core:Item key="NH3" text="前10分鐘氨水使用量均值"/>-->
+											<!--<core:Item key="NOX" text="前10分鐘NOx數值均值"/>-->
+											<!--<core:Item key="MAT" text="前10分鐘生料使用量均值"/>-->
+											<!--<core:Item key="NH3AVG" text="未來3分鐘氨水均值"/>-->
+											<core:Item key="Degree" text="Kiln Temp. (past 10 mins)"/>
+											<core:Item key="NH3" text="NH3 (past 10 mins)"/>
+											<core:Item key="NOX" text="NOx (past 10 mins)"/>
+											<core:Item key="MAT" text="Raw Material (past 10 mins)值"/>
+											<core:Item key="NH3AVG" text="NH3 (next 3 mins)"/>											
+										</items>
+									</Select>
+									<Select class="mySelect" width="10rem" change="onSelectEchart">
+										<items>
+											<!--<core:Item key="week" text="最近一周"/>-->
+											<!--<core:Item key="month" text="最近一个月-->
+											<core:Item key="week" text="Last week"/>
+											<core:Item key="month" text="Last month"/>											
+										</items>
+									</Select>
+								</HBox>
+								<vco:EChart option="{simHistoryOpt}" height="300px"/>
+							</VBox>
+						</Panel>
+					</IconTabFilter>
+					<!--<IconTabFilter text="SOx處理建議" key="sox" binding="{/simulateSOx}">-->
+					<IconTabFilter text="SOx Recommendations" key="sox" binding="{/simulateSOx}">						
+						<VBox class="sapUiSmallMarginTop">
+								<VBox class="myBorderBottom sapUiSmallMarginBottom">
+								<Title text="SOx處理SOP" class="myTitle"/>
+							</VBox>
+						
+							<Label text="預測SOx排放量將會在3分鐘後超過20，建議進行如下操作：" class="myLabel sapUiTinyMarginBottom"/>
+							<Label text="1. 處理建議一" class="myLabel sapUiTinyMarginBottom"/>
+							<Label text="2. 處理建議二" class="myLabel sapUiTinyMarginBottom"/>
+						</VBox>
+						<VBox class="sapUiSmallMarginTop">
+							<VBox class="myBorderBottom sapUiSmallMarginBottom">
+								<!--<Title text="SOx智能模擬建議" class="myTitle"/>-->
+								<Title text="SOx Intelligent Simulation Suggestion" class="myTitle"/>								
+							</VBox>
+							<HBox class="myTextBG sapUiContentPadding">
+								<VBox class="sapUiSmallMarginTop sapUiMediumMarginBeginEnd">
+									<Image src="image/settings.gif" width="100%"/>
+								</VBox>
+								<FormattedText htmlText="{/HTMLTemp}"/>
+							</HBox>
+						</VBox>
+						<Panel class="myPanelHeader sapUiSmallMarginTop sapUiNoContentPadding" headerText="智能模擬" expandable="true" expanded="false">
+							<Toolbar class="myToolbarBorder">
+								<ToolbarSpacer/>
+								<SegmentedButton selectedKey="model" selectionChange="onPressModel" class="myPanelSegBtn">
+									<items>
+										<!--<SegmentedButtonItem text="模擬" key="model"/>-->
+										<!--<SegmentedButtonItem text="模擬歷史版本" key="modelHistory"/>-->
+										<SegmentedButtonItem text="Simulation" key="model"/>
+										<SegmentedButtonItem text="Simulation History Version" key="modelHistory"/>										
+									</items>
+								</SegmentedButton>
+								<ToolbarSpacer/>
+							</Toolbar>
+							<Panel class="myPanel" visible="{/showModel}">
+								<HBox class="sapUiMediumMargin">
+									<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<Label text="1.前10分钟鍛燒爐溫度均值" class="myLabel sapUiTinyMarginBottom"/>
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>												
+												<ObjectNumber number="870.00" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjustment Value" class="myLabel sapUiTinyMarginBottom"/>	
+												<StepInput value="{input1}" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+									</VBox>
+									<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<Label text="2.前10分钟氨水使用量均值" class="myLabel sapUiTinyMarginBottom"/>
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>		
+												<ObjectNumber number="0.60" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjustment Value" class="myLabel sapUiTinyMarginBottom"/>	
+												<StepInput value="{input2}" class="mySimulateInput" step="0.1" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+									</VBox>
+									<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<Label text="3.前10分钟NOx數值均值" class="myLabel sapUiTinyMarginBottom"/>
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>		
+												<ObjectNumber number="340" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjustment Value" class="myLabel sapUiTinyMarginBottom"/>	
+												<StepInput value="{input3}" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+									</VBox>
+								</HBox>
+								<HBox class="sapUiMediumMargin">
+									<VBox width="32%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<Label text="4.前10分钟生料使用量均值" class="myLabel sapUiTinyMarginBottom"/>
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>		
+												<ObjectNumber number="429.00" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjustment Value" class="myLabel sapUiTinyMarginBottom"/>	
+												<StepInput value="{input4}" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+									</VBox>
+									<VBox width="32%" class="sapUiTinyMarginBeginEnd sapUiContentPadding myPanelVBox">
+										<Label text="5.未來3分鐘氨水均值" class="myLabel sapUiTinyMarginBottom"/>
+										<HBox>
+											<VBox width="35%">
+												<!--<Label text="當前運行值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>		
+												<ObjectNumber number="0.60" class="mySimulateStepObjNum" state="Success"/>
+											</VBox>
+											<VBox width="65%">
+												<!--<<Label text="調整值" class="myLabel sapUiTinyMarginBottom"/>-->
+												<Label text="Adjustment Value" class="myLabel sapUiTinyMarginBottom"/>	
+												<StepInput value="{input5}" class="mySimulateInput" step="0.1" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+													change="onChange"/>
+											</VBox>
+										</HBox>
+									</VBox>
+								</HBox>
+								<Toolbar class="myToolbarBorder">
+									<ToolbarSpacer/>
+									<!--<Button text="開始模擬" class="mySimulateBtn" press="onPressSimulate"/>-->
+									<Button text="Run Simulation" class="mySimulateBtn" press="onPressSimulate"/>									
+									<ToolbarSpacer/>
+								</Toolbar>
+							</Panel>
+							<Panel class="myPanel" visible="{=!${/showModel}}">
+								<Table inset="false" sticky="ColumnHeaders" items="{path: '/modelHistory',sorter: {path: 'Date'}}" alternateRowColors="true">
+									<columns>
+										<Column>
+											<!--<Text text="版本"/>-->
+											<Text text="Version"/>											
+										</Column>
+										<Column >
+											<!--<Text text="目标值"/>-->
+											<Text text="Target Value"/>											
+										</Column>
+										<Column>
+											<Text text="前10分鐘氨水使用量均值"/>
+										</Column>
+										<Column>
+											<Text text="前10分鐘鍛燒爐溫度均值"/>
+										</Column>
+										<Column >
+											<Text text="前10分鐘NOx數值均值"/>
+										</Column>
+										<Column>
+											<Text text="前10分钟生料使用量均值"/>
+										</Column>
+										<Column>
+											<Text text="未來3分鐘氨水均值"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem vAlign="Middle">
+											<cells>
+												<Text text="{Date}"/>
+												<Text text="{Target}"/>
+												<Text text="{NH3}"/>
+												<Text text="{Degree}"/>
+												<Text text="{NOX}"/>
+												<Text text="{MAT}"/>
+												<Text text="{NH3AVG}"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</Panel>
+							<!--</VBox>-->
+							<VBox class="sapUiSmallMarginTop">
+								<Title text="Target: 未來4 - 6分鐘的NOx均值" class="myTitle sapUiTinyMarginBottom" width="100%"/>
+								<HBox>
+									<ObjectNumber textAlign="End" number="{predictValue}" state="Error" class="mySimulateObjNum"/>
+									<mc:BulletMicroChart size="L" targetValue="280.12" class="sapUiTinyMarginTopBottom">
+										<mc:actual>
+											<mc:BulletMicroChartData value="{predictValue}" color="Good"/>
+										</mc:actual>
+										<mc:thresholds>
+											<mc:BulletMicroChartData value="0" color="Good"/>
+											<mc:BulletMicroChartData value="280" color="Critical"/>
+											<mc:BulletMicroChartData value="320" color="Error"/>
+										</mc:thresholds>
+									</mc:BulletMicroChart>
+								</HBox>
+								<vco:EChart option="{simOpt}" height="300px"/>
+							</VBox>
+							<VBox class="sapUiSmallMarginTop">
+								<Title text="調整設備歷史數據" class="myTitle sapUiTinyMarginBottom"/>
+								<HBox>
+									<Select selectedKey="Degree" class="mySelect  sapUiSmallMarginEnd" width="15rem" change="onSelectEchart">
+										<items>
+											<core:Item key="Degree" text="前10分鐘鍛燒爐溫度均值"/>
+											<core:Item key="NH3" text="前10分鐘氨水使用量均值"/>
+											<core:Item key="NOX" text="前10分鐘NOx數值均值"/>
+											<core:Item key="MAT" text="前10分鐘生料使用量均值"/>
+											<core:Item key="NH3AVG" text="未來3分鐘氨水均值"/>
+										</items>
+									</Select>
+									<Select class="mySelect" width="10rem" change="onSelectEchart">
+										<items>
+											<!--<core:Item key="week" text="最近一周"/>-->
+											<!--<core:Item key="month" text="最近一个月"/>-->
+											<core:Item key="week" text="Last week"/>
+											<core:Item key="month" text="Last month"/>											
+										</items>
+									</Select>
+								</HBox>
+								<vco:EChart option="{simHistoryOpt}" height="300px"/>
+							</VBox>
+						</Panel>
+					</IconTabFilter>
+					<!--<IconTabFilter text="歷史數據" key="history">-->
+					<IconTabFilter text="Historical Data" key="history">						
+						<VBox>
+							<!--<Title text="歷史數據" class="myTitle sapUiSmallMarginTop"/>-->
+							<Title text="Historical Data" class="myTitle sapUiSmallMarginTop"/>							
+							<Select selectedKey="month" class="mySelect" width="15%" change="onSelect">
+								<items>
+									<!--<core:Item key="day" text="最近一天"/>-->
+									<!--<core:Item key="week" text="最近一周"/>-->
+									<!--<core:Item key="month" text="最近一個月"/>-->
+									<core:Item key="day" text="Last day"/>
+									<core:Item key="week" text="Last week"/>
+									<core:Item key="month" text="Last month"/>									
+								</items>
+							</Select>
+							<vco:EChart id="idEChartNoxNew" option="{/noOption}" height="300px"/>
+							<vco:EChart id="idEChartSoxNew" option="{/soOption}" height="300px"/>
+						</VBox>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</VBox>
+		<endButton>
+			<!--<Button text="關閉" press="handleDialogClose" class="myButton"></Button>-->
+			<Button text="Close" press="handleDialogClose" class="myButton"></Button>			
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

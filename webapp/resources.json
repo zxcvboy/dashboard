@@ -1,0 +1,250 @@
+{
+    "resources": [
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/BaseController.js"
+        },
+        {
+            "name": "controller/Main-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Main.controller.js"
+        },
+        {
+            "name": "controller/Map-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Map.controller.js"
+        },
+        {
+            "name": "controller/Monitor-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Monitor.controller.js"
+        },
+        {
+            "name": "controller/Table-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Table.controller.js"
+        },
+        {
+            "name": "css/style-dbg.css",
+            "isDebug": true
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "css/style_backup-dbg.css",
+            "isDebug": true
+        },
+        {
+            "name": "css/style_backup.css"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "image/CaolPredict.png"
+        },
+        {
+            "name": "image/mainHeader.png"
+        },
+        {
+            "name": "image/mapHeader.png"
+        },
+        {
+            "name": "image/mapLegend.png"
+        },
+        {
+            "name": "image/mapLegend2.png"
+        },
+        {
+            "name": "image/pageHeader.png"
+        },
+        {
+            "name": "image/settings.gif"
+        },
+        {
+            "name": "image/tableHeader.png"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "json/caveDetailByOne.json"
+        },
+        {
+            "name": "json/deviceSuggestion.json"
+        },
+        {
+            "name": "json/deviceUL.json"
+        },
+        {
+            "name": "json/factoryDetailByDay.json"
+        },
+        {
+            "name": "json/factoryDetailByOneHour.json"
+        },
+        {
+            "name": "json/factoryLocation.json"
+        },
+        {
+            "name": "json/nosoDetailByMin.json"
+        },
+        {
+            "name": "json/simulateHistory.json"
+        },
+        {
+            "name": "lib/EChart-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/EChart.js"
+        },
+        {
+            "name": "lib/jquery-ui.min-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/jquery-ui.min.js"
+        },
+        {
+            "name": "lib/jquery.min-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/jquery.min.js"
+        },
+        {
+            "name": "lib/monthPicker-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/monthPicker.js"
+        },
+        {
+            "name": "lib/svg-animation-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/svg-animation.js"
+        },
+        {
+            "name": "lib/vendor/echart/bmap-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/vendor/echart/bmap.js"
+        },
+        {
+            "name": "lib/vendor/echart/echarts-min-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/vendor/echart/echarts-min.js"
+        },
+        {
+            "name": "lib/vendor/echart/theme-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/vendor/echart/theme.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "sap-ui-cachebuster-info.json"
+        },
+        {
+            "name": "util/PAmodel-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PAmodel.js"
+        },
+        {
+            "name": "util/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/formatter.js"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "view/CaveParameter.fragment.xml"
+        },
+        {
+            "name": "view/DeviceParameter.fragment.xml"
+        },
+        {
+            "name": "view/DeviceParameterNew.fragment.xml"
+        },
+        {
+            "name": "view/FilterPopover.fragment.xml"
+        },
+        {
+            "name": "view/Main.view.xml"
+        },
+        {
+            "name": "view/MainFilterPopover.fragment.xml"
+        },
+        {
+            "name": "view/Map.view.xml"
+        },
+        {
+            "name": "view/Monitor.view.xml"
+        },
+        {
+            "name": "view/OutSystem.fragment.xml"
+        },
+        {
+            "name": "view/Suggestion.fragment.xml"
+        },
+        {
+            "name": "view/Table.view.xml"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+<mvc:View controllerName="Managment.Dashboard.controller.Map"
+          xmlns:mvc="sap.ui.core.mvc"
+          displayBlock="true"
+          xmlns="sap.m"
+          xmlns:core="sap.ui.core"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+          xmlns:vco="Managment.Dashboard.lib">
+    <vco:EChart id="idEChart" margin="0" afterResize="onAfterMapResize"/>
+    <Image src="image/mapHeader.png" width="100%" class="PageHeaderImage"/>
+    <Label text="2019年4月總產能" class="MapLabel"/>
+    <!--<core:Icon src="sap-icon://appointment" color="#00FFFE" class="MapICon"></core:Icon>-->
+    <NumericContent value="{/totalOutput}" scale="噸" truncateValueTo="20" class="MapNumberCont sapUiMediumPadding"
+                    withMargin="false"/>
+    <HBox class="map-btn-group">
+        <Button text="總表" press="onNavTable" class="MapTableButton"/>
+        <Button text="篩選" press="onFilter" class="AppFilterButton margin-l-20px"/>
+    </HBox>
+    <Image src="image/mapLegend2.png" class="MapLegend" useMap="regions"/>
+    <core:HTML content='&lt;map  name=&quot;regions&quot;&gt;
+                    &lt;area class=&quot;mapCircle&quot; shape=&quot;circle&quot; coords=&quot;44,83,12&quot; title=&quot;窯正在運轉 ＆ (NOX ＆ SOX ＆ CO2 ＆ OP量測值皆 >0)&quot;&gt;
+                    &lt;area class=&quot;mapCircle&quot; shape=&quot;circle&quot; coords=&quot;131,83,12&quot;  title=&quot;任一窯沒有運轉 or 環保排放任一個超標 或 收集值 = 0(i.e. NOX, SOX, CO2, OP量測值超過法規值)&quot;&gt;
+                    &lt;/map&gt;'>
+    </core:HTML>
+</mvc:View>

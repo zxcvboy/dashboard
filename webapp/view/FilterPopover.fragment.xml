@@ -1,0 +1,101 @@
+<core:FragmentDefinition xmlns="sap.m"
+                         xmlns:core="sap.ui.core"
+                         xmlns:vco="Managment.Dashboard.lib">
+    <Popover showHeader="false" class="custom-popover sapUiContentPadding" placement="Bottom" showArrow="false">
+        <Toolbar>
+            <!--<vco:monthPicker  width="30%" month="{/month}" year="{/year}" selectMonth="sureToselect"/>-->
+            <DatePicker value="2019-11-18" width="50%" valueFormat="yyyy-MM-dd" displayFormat="short"
+                        change="handleChange" class="myDatePicker sapUiSmallMarginBottom"/>
+        </Toolbar>
+        <VBox>
+            <HBox class="filterHBox">
+                <ToggleButton text="集團" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="0000"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="英德" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="false"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="2011"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="貴港" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="2511"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="重慶" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="3311"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="句容" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="2711"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="安順" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="3411"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="凱里" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="3511"/>
+                    </customData>
+                </ToggleButton>
+            </HBox>
+            <HBox class="filterHBox">
+                <ToggleButton text="敘永" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="4311"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="懷化" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="6111"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="廣安" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="3211"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="華鎣" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="4111"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="靖州" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="0000"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="港安" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="3111"/>
+                    </customData>
+                </ToggleButton>
+                <ToggleButton text="遼寧" class="myToggleButton sapUiTinyMarginBeginEnd" enabled="true" pressed="true"
+                              press="onPress">
+                    <customData>
+                        <core:CustomData value="0000"/>
+                    </customData>
+                </ToggleButton>
+            </HBox>
+        </VBox>
+    </Popover>
+</core:FragmentDefinition>

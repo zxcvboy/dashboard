@@ -1,0 +1,94 @@
+_schema-version: "3.2"
+ID: Managment-dashboard
+description: A Fiori application.
+version: 0.0.1
+modules:
+- name: Managment-dashboard-dest-content
+  type: com.sap.application.content
+  requires:
+  - name: Managment-dashboard-dest-srv
+    parameters:
+      content-target: true
+  - name: Managment-dashboard-repo-host
+    parameters:
+      service-key:
+        name: Managment-dashboard-repo-host-key
+  - name: Managment-dashboard-uaa
+    parameters:
+      service-key:
+        name: Managment-dashboard-uaa-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: Managment-dashboard_repo_host
+          ServiceInstanceName: Managment-dashboard-html5-srv
+          ServiceKeyName: Managment-dashboard-repo-host-key
+          sap.cloud.service: Managment-dashboard
+        - Authentication: OAuth2UserTokenExchange
+          Name: Managment-dashboard_uaa
+          ServiceInstanceName: Managment-dashboard-xsuaa-srv
+          ServiceKeyName: Managment-dashboard-uaa-key
+          sap.cloud.service: Managment-dashboard
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: Managment-dashboard-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: Managment-dashboard-repo-host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - Managmentdashboard.zip
+      name: Managmentdashboard
+      target-path: resources/
+- name: Managmentdashboard
+  type: html5
+  path: .
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: Managment-dashboard-dest-srv
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: Managment-dashboard-dest-srv
+    service-plan: lite
+- name: Managment-dashboard-uaa
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: Managment-dashboard-xsuaa-srv
+    service-plan: application
+- name: Managment-dashboard-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: Managment-dashboard-html5-srv
+    service-plan: app-host
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true

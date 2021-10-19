@@ -1,0 +1,293 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mc="sap.suite.ui.microchart" xmlns:vco="Managment.Dashboard.lib">
+	<Dialog showHeader="false" contentHeight="90%" contentWidth="80%" class="myDialog">
+		<VBox class="sapUiSmallMarginBegin sapUiMediumMarginEnd">
+			<VBox class="sapUiSmallMarginTop">
+				<!--<Title text="製程優化模擬建議" class="myTitle sapUiTinyMarginBottom"/>-->
+				<!--<Label text="調整如下14個設備的參數，模擬產量" wrapping="true" class="myLabel sapUiTinyMarginBottom"/>-->
+				<Title text="Process Optimization and Simulation" class="myTitle sapUiTinyMarginBottom"/>
+				<Label text="Optimize Parameters" wrapping="true" class="myLabel sapUiTinyMarginBottom"/>				
+			</VBox>
+			<VBox class="sapUiSmallMarginTop">
+				<Panel class="myPanel" visible="{/showModel}">
+					<HBox class="sapUiMediumMargin">
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="1. C1A風壓(pa)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="1. C1A Air Fan Presure(pa)" class="myLabel sapUiTinyMarginBottom"/>
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>									
+									<ObjectNumber number="440.77" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>									
+									<StepInput value="450" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="2. C2A風壓(pa)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="2. C2A Air Fan Presure(pa)" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="480" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="453" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="3. C3A風壓(pa)" class="myLabel sapUiTinyMarginBottom"/>-->	
+							<Label text="3. C3A Air Fan Presure(pa)" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="450.47" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="456" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+					</HBox>
+							<HBox class="sapUiMediumMargin">
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="4. C4A風壓(pa)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="4. C4A Air Fan Presure(pa)" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="420.77" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="447" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="5. 斜拉链电流(A)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="5. Current of Diagonal Zipper(A)" class="myLabel sapUiTinyMarginBottom"/>				
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="95" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="100" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+							<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="6. 二段篦速(SPM)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="6. SPM 2" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="25" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="30" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+					</HBox>
+							<HBox class="sapUiMediumMargin">
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="7. 一段篦速(SPM)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="7. SPM 1" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="25" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="30" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="8. 窑头火焰(℃)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="8. Kiln Outlet Temp.(℃)" class="myLabel sapUiTinyMarginBottom"/>
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="1080" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="1280" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1500" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+							<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="9. 三次风温(℃))" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="9. 3rd Wind Temperature(℃))" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="1090" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="1290" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1500" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+					</HBox>
+							<HBox class="sapUiMediumMargin">
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="10. 窑转速(rpm)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="10. Kiln rpm" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="4.7" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="4.7" class="mySimulateInput" step="0.5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+						<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="11. 窑头喂煤量(t/h)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="11. Kiln Outlet Coal(t/h)" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="18.5" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="20" class="mySimulateInput" step="0.5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+							<VBox width="33%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="12. 窑尾喂煤量(t/h)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="12. Kiln Inlet Coal(t/h)" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="15" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="17" class="mySimulateInput" step="0.5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+					</HBox>
+							<HBox class="sapUiMediumMargin">
+						<VBox width="32%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="13. 高温风机转速(rpm)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="13. Hign Temp. Fan(rpm)" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="720" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="750" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+						<VBox width="32%" class="sapUiTinyMarginBeginEnd sapUiContentPadding  myPanelVBox">
+							<!--<Label text="14. 窑喂生料量(t/h)" class="myLabel sapUiTinyMarginBottom"/>-->
+							<Label text="14. Raw Material(t/h)" class="myLabel sapUiTinyMarginBottom"/>							
+							<HBox>
+								<VBox width="35%">
+									<!--<Label text="當前運行參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Current Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<ObjectNumber number="460" class="mySimulateStepObjNum" state="Success"/>
+								</VBox>
+								<VBox width="65%">
+									<!--<Label text="調整參數" class="myLabel sapUiTinyMarginBottom"/>-->
+									<Label text="Target Value" class="myLabel sapUiTinyMarginBottom"/>	
+									<StepInput value="550" class="mySimulateInput" step="5" displayValuePrecision="2" min="0" max="1000" width="80%" textAlign="Center"
+										change="onChange"/>
+								</VBox>
+							</HBox>
+						</VBox>
+
+					</HBox>
+					<Toolbar class="myToolbarBorder">
+						<ToolbarSpacer/>
+						<!--<Button text="開始模擬" class="mySimulateBtn" press="onPressSimulateOutput"/>-->
+						<Button text="Run Simulation" class="mySimulateBtn" press="onPressSimulateOutput"/>						
+						<ToolbarSpacer/>
+					</Toolbar>
+				</Panel>
+			</VBox>
+			<VBox class="sapUiSmallMarginTop">
+				<!--<Title text="Target: 預計產量(噸)" class="myTitle sapUiTinyMarginBottom" width="100%"/>-->
+				<Title text="Target: Predicted Value (Tons)" class="myTitle sapUiTinyMarginBottom" width="100%"/>				
+				<HBox>
+					<ObjectNumber textAlign="End" number="{path:'/output',formatter: '.formatter.formatThousand2'}" state="Error" class="mySimulateObjNum"/>
+					<mc:BulletMicroChart size="L" targetValue="9500" class="sapUiTinyMarginTopBottom">
+						<mc:actual>
+							<mc:BulletMicroChartData value="{/output}" color="Good"/>
+						</mc:actual>
+						<mc:thresholds>
+							<mc:BulletMicroChartData value="0" color="Good"/>
+							<mc:BulletMicroChartData value="8950" color="Critical"/>
+							<mc:BulletMicroChartData value="10000" color="Error"/>
+						</mc:thresholds>
+					</mc:BulletMicroChart>
+				</HBox>
+			</VBox>
+
+		</VBox>
+		<endButton>
+			<!--<Button text="關閉" press="handleDialogClose" class="myButton"></Button>-->
+			<Button text="Close" press="handleDialogClose" class="myButton"></Button>			
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

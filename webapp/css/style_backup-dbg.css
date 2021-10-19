@@ -1,0 +1,154 @@
+/*百度logo暂时隐藏*/
+
+.anchorBL {
+    display: none;
+}
+
+
+/*****************common*****************/
+
+
+/*****************App view*****************/
+
+.app {
+    background-color: #00053e!important;
+}
+
+.app .sapUiGlobalBackgroundColor{
+    background-color: transparent;
+}
+
+.pageMarginTop {
+    margin-top: 6rem;
+}
+
+.HeadToolbar {
+    position: absolute !important;
+    top: 0.5rem;
+    border: none;
+    height: 5rem;
+    z-index: 1000;
+}
+
+.HeadToolbar .sapMTitle {
+    color: #02FEAE;
+    font-size: 2rem !important;
+}
+
+.NavBackButton {
+    margin-bottom: 2.5rem;
+}
+
+.NavBackButton .sapMBtnIcon {
+    color: #00FFFE!important;
+    text-shadow: 0 0 0 #ffffff;
+    font-size: 1.6rem;
+}
+
+.MainHeaderImage {
+    position: absolute !important;
+    top: 10px;
+    z-index: 999;
+}
+
+.PageHeaderImage {
+    position: absolute !important;
+    top: 45px;
+    z-index: 999;
+}
+
+
+/********************* Map view*************************/
+
+.MapLabel {
+    position: absolute !important;
+    top: 151px;
+    left: 70px;
+    color: #00FFFE;
+    font-size: 32px;
+}
+
+.MapICon {
+    position: absolute !important;
+   top: 170px;
+    left: 20.5rem;
+    color: #00FFFE;
+}
+
+.MapNumberCont {
+    position: absolute !important;
+    top: 185px;
+    left: 70px;
+}
+
+.MapNumberCont .sapMNCValue {
+    font-size: 160px;
+    line-height: 160px;
+    text-shadow: 0 0 41px rgba(2,254,174,0.87);
+}
+
+.MapNumberCont .sapMNCValue.Neutral,
+.MapNumberCont .sapMNCScale.Neutral {
+    color: #02FEAE;
+}
+
+.MapNumberCont .sapMNCIndScale {
+    height: 5rem;
+}
+
+.MapNumberCont .sapMNCScale {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+}
+
+.MapTableButton {
+    position: absolute !important;
+    top: 382px;
+    left: 70px;
+}
+
+.MapTableButton .sapMBtnInner,
+.MapFilterButton .sapMBtnInner {
+    background-color: rgba(2, 255, 254, 0.10);
+    color: #00FFFE;
+    font-size: 1.8rem;
+    border: 1px solid #00FFFE;
+    width: 112px;
+    height: 48px;
+    text-shadow: 0 0 0 #ffffff;
+    padding-top: 5px;
+}
+
+.sapMBtn:hover>.sapMBtnHoverable {
+    background-color: rgba(0,255,255,0.10)!important;
+    border: 1px solid #00FFFE;
+}
+
+.MapFilterButton {
+    position: absolute !important;
+    top: 127px;
+    left: 1723px;
+}
+
+.MapLegend {
+    position: absolute !important;
+    top: 718px;
+    left: 69px;
+}
+.MapGreenICon{
+	position: absolute !important;
+    top: 791px;
+    left: 101px;
+    z-index:1000;
+}
+.MapRedICon{
+		position: absolute !important;
+    top: 791px;
+    left: 288px;
+     z-index:1000;
+}
+/********************* Table view*************************/
+.textColor{
+	color:#00FFFE;
+	font-size:1.5rem;
+}

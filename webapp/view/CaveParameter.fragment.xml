@@ -1,0 +1,68 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:vco="Managment.Dashboard.lib">
+	<Dialog showHeader="false" contentHeight="90%" contentWidth="80%" class="myDialog">
+		<VBox class="sapUiSmallMarginBegin">
+			<!--<Title text="旋窯當前參數" class="myTitle sapUiSmallMarginTop"/>-->
+			<Title text="Rotary Kiln Current Parameters" class="myTitle sapUiSmallMarginTop"/>
+			<HBox class="sapUiTinyMarginBottom">
+				<HBox class="myHBox sapUiSmallMarginEnd" width="33%">
+					<!--<Label text="窯頭風壓" class="myLabel sapUiLargeMarginEnd"/>-->
+					<Label text="Kiln Outlet Fan Pressure" class="myLabel sapUiLargeMarginEnd"/>
+					<ObjectNumber textAlign="End" number="-46" numberUnit="pa" state="Success"/>
+				</HBox>
+				<HBox class="myHBox sapUiSmallMarginEnd" width="33%">
+					<!--<Label text="窯中風壓" class="myLabel sapUiLargeMarginEnd"/>-->
+					<Label text="2nd Fan Pressure" class="myLabel sapUiLargeMarginEnd"/>
+					<ObjectNumber textAlign="End" number="-49" numberUnit="pa" state="Success"/>
+				</HBox>
+				<HBox class="myHBox sapUiSmallMarginEnd" width="33%">
+					<!--<Label text="窯尾風壓" class="myLabel sapUiLargeMarginEnd"/>-->
+					<Label text="Kiln Inlet Fan Pressure" class="myLabel sapUiLargeMarginEnd"/>
+					<ObjectNumber textAlign="End" number="-50" numberUnit="pa" state="Success"/>
+				</HBox>
+			</HBox>
+			<HBox class="sapUiTinyMarginBottom">
+				<HBox class="myHBox sapUiSmallMarginEnd" width="33%">
+					<!--<Label text="窯頭溫度" class="myLabel sapUiLargeMarginEnd"/>-->
+					<Label text="Kiln Outlet Temperature" class="myLabel sapUiLargeMarginEnd"/>
+					<ObjectNumber textAlign="End" number="1,115.25" numberUnit="°C" state="Error"/>
+				</HBox>
+				<HBox class="myHBox sapUiSmallMarginEnd" width="33%">
+					<!--<Label text="窯中溫度" class="myLabel sapUiLargeMarginEnd"/>-->
+					<Label text="2nd Temperature" class="myLabel sapUiLargeMarginEnd"/>
+					<ObjectNumber textAlign="End" number="1,235.25" numberUnit="°C" state="Error"/>
+				</HBox>
+				<HBox class="myHBox sapUiSmallMarginEnd" width="33%">
+					<!--<Label text="窯尾溫度" class="myLabel sapUiLargeMarginEnd"/>-->
+					<Label text="Kiln Inlet Temperature" class="myLabel sapUiLargeMarginEnd"/>
+					<ObjectNumber textAlign="End" number="1,345.25" numberUnit="°C" state="Error"/>
+				</HBox>
+			</HBox>
+		</VBox>
+<!--		<VBox class="sapUiSmallMarginBegin">-->
+<!--			<Title text="旋窯智能模擬建議" class="myTitle sapUiSmallMarginTop"/>-->
+<!--			<Label text="1. 處理建議一" class="myLabel"/>-->
+<!--			<Label text="2. 處理建議二" class="myLabel"/>-->
+<!--			&lt;!&ndash;<HBox class="myTextBG sapUiContentPadding">&ndash;&gt;-->
+<!--			&lt;!&ndash;	<VBox class="sapUiSmallMarginTop sapUiMediumMarginBeginEnd">&ndash;&gt;-->
+<!--			&lt;!&ndash;		<Image src="image/settings.gif" width="100%"/>&ndash;&gt;-->
+<!--			&lt;!&ndash;	</VBox>&ndash;&gt;-->
+<!--			&lt;!&ndash;	<VBox>&ndash;&gt;-->
+<!--			&lt;!&ndash;	<Label text="1.建议1" class="myLabel"/>&ndash;&gt;-->
+<!--			&lt;!&ndash;	<Label text="2.建议2" class="myLabel"/>&ndash;&gt;-->
+<!--			&lt;!&ndash;	</VBox>&ndash;&gt;-->
+<!--			&lt;!&ndash;</HBox>&ndash;&gt;-->
+<!--		</VBox>-->
+		<VBox class="sapUiSmallMarginBegin">
+			<!--<Title text="軸向展開分析圖" class="myTitle sapUiSmallMarginTop"/>-->
+			<Title text="Kilnscan Temperature (℃)" class="myTitle sapUiSmallMarginTop"/>
+			<vco:EChart id="idEChartCaveHot" option="{/caveOption}" height="300px"/>
+			<!--<Title text="軸向溫度分析圖" class="myTitle sapUiSmallMarginTop"/>-->
+			<Title text="Temperature Chart (℃)" class="myTitle sapUiSmallMarginTop"/>
+			<vco:EChart id="idEChartCaveLine" option="{/degreeOption}" height="300px"/>
+		</VBox>
+		<endButton>
+			<!--<Button text="關閉" press="handleDialogClose" class="myButton"></Button>-->
+			<Button text="Close" press="handleDialogClose" class="myButton"></Button>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

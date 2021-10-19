@@ -1,0 +1,66 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:vco="Managment.Dashboard.lib">
+	<Dialog showHeader="false" contentHeight="90%" contentWidth="80%" class="myDialog">
+		<VBox class="sapUiSmallMarginBegin">
+			<!--<Title text="設備當前參數" class="myTitle sapUiSmallMarginTop"/>-->
+			<Title text="Equipment Current Parameter" class="myTitle sapUiSmallMarginTop"/>			
+			<HBox class="myHBox sapUiTinyMarginBottom" width="33%">
+				<!--<Label text="風壓" class="myLabel sapUiLargeMarginEnd"/>-->
+				<Label text="Fan Pressure" class="myLabel sapUiLargeMarginEnd"/>
+				<ObjectNumber textAlign="End" number="130" state="Error"/>
+			</HBox>
+			<HBox class="myHBox" width="33%">
+				<!--<Label text="溫度" class="myLabel sapUiLargeMarginEnd"/>-->
+				<Label text="Temperature" class="myLabel sapUiLargeMarginEnd"/>				
+				<ObjectNumber textAlign="End" number="543" state="Success"/>
+			</HBox>
+		</VBox>
+		<VBox class=" sapUiSmallMarginBegin sapUiSmallMarginTop">
+			<VBox class="myBorderBottom sapUiSmallMarginBottom">
+				<!--<Title text="風壓處理SOP" class="myTitle"/>-->
+				<Title text="Fan Pressure Adjustment SOP" class="myTitle"/>				
+			</VBox>
+			<!--<Label text="當前風壓已超過預警值，建議進行如下操作：" class="myLabel sapUiTinyMarginBottom"/>-->
+			<!--<Label text="1. 處理建議一" class="myLabel sapUiTinyMarginBottom"/>-->
+			<!--<Label text="2. 處理建議二" class="myLabel sapUiTinyMarginBottom"/>-->
+			<Label text="Warning.....The current fan pressure has exceeded the warning value. It is recommended to perform the following adjustment:" class="myLabel sapUiTinyMarginBottom"/>
+			<Label text="Step 1:" class="myLabel sapUiTinyMarginBottom"/>
+			<Label text="Step 2:" class="myLabel sapUiTinyMarginBottom"/>
+		</VBox>
+		<VBox class="sapUiSmallMarginBegin">
+				<VBox class="myBorderBottom sapUiSmallMarginBottom">
+							<!--Title text="風壓智能模擬建議" class="myTitle"/>-->
+							<Title text="Fan Pressure Intelligent Simulation" class="myTitle"/>							
+							</VBox>
+			
+			<HBox class="myTextBG sapUiContentPadding sapUiMediumMarginEnd">
+				<VBox class="sapUiSmallMarginTop sapUiMediumMarginBeginEnd">
+					<Image src="image/settings.gif" width="100%"/>
+				</VBox>
+				<FormattedText htmlText="{/HTMLTemp}"/>
+			</HBox>
+			<!--<Label text="1. 建議XXX" class="myLabel"/>-->
+			<!--<Label text="2. 建議XXX" class="myLabel"/>-->
+			<!--<TextArea value="智能模擬建議" width="96%" class="myTextArea" />-->
+		</VBox>
+		<VBox class="sapUiSmallMarginBegin">
+			<!--<Title text="歷史數據" class="myTitle sapUiSmallMarginTop"/>-->
+			<Title text="Historical Data" class="myTitle sapUiSmallMarginTop"/>			
+			<Select selectedKey="month" class="mySelect" width="15%" change="onSelect">
+				<items>
+					<!--<core:Item key="day" text="最近一天"/>-->
+					<!--<core:Item key="week" text="最近一周"/>-->
+					<!--<core:Item key="month" text="最近一個月"/>-->
+					<core:Item key="day" text="Last day"/>
+					<core:Item key="week" text="Last week"/>
+					<core:Item key="month" text="Last Month"/>					
+				</items>
+			</Select>
+			<vco:EChart id="idEChartNox" option="{/noOption}" height="300px"/>
+			<vco:EChart id="idEChartSox" option="{/soOption}" height="300px"/>
+		</VBox>
+		<endButton>
+			<!--<Button text="關閉" press="handleDialogClose" class="myButton"></Button>-->
+			<Button text="Close" press="handleDialogClose" class="myButton"></Button>			
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>
